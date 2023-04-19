@@ -19,8 +19,6 @@ app.use(express.static(path.join(__dirname, 'public'), {
 
 io.on("connection", (socket) => {
     console.log("Un utilisateur vient de se connecter.")
-    const { id } = socket
-    console.log(`User connected with ID ${id}`);
 
     socket.on("disconnect", () => {
         

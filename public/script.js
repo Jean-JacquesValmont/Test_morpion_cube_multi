@@ -1,11 +1,6 @@
 //Pour permet l'échange avec le serveur
 let socket = io()
-import { v4 as uuidv4 } from 'uuid';
-
-const id = uuidv4();
-socket.emit('user_connected', { id });
-
-    
+   
 //Variables
 let currentPlayer = "X";
 let gameOver = false;
