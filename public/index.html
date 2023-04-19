@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Morpion RubikCube</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div id="room-list">
+        <h2>Liste des rooms disponibles :</h2>
+        <ul id="room-list-ul">
+            <!-- Les rooms disponibles seront ajoutées ici par JavaScript -->
+        </ul>
+    </div>
+    
+    <div id="join-room">
+        <h2>Rejoindre une room :</h2>
+        <label for="room-id-input">Identifiant de la room :</label>
+        <input type="text" id="room-id-input">
+        <button id="join-room-button">Rejoindre la room</button>
+    </div>
+    
+    <h1>Morpion Cube</h1>
+
+    <p id="message"></p>
+    <p id="titleBoardPrincipale">Face Principale</p>
+
+    <div id="buttonUp">
+        <div id = "arrowUpLeft">
+            <button id="buttonUpLeft">Haut</button>
+        </div>
+        <div id = "arrowUpMiddle">
+            <button id="buttonUpMiddle">Haut</button>
+        </div>
+        <div id = "arrowUpRight">
+            <button id="buttonUpRight">Haut</button>
+        </div>
+    </div>
+
+    <div id="game">
+        
+        <div>
+            <div id = "arrowLeftUp">
+                <button id="buttonLeftUp">Gauche</button>
+            </div>
+            <div id = "arrowLeftMiddle">
+                <button id="buttonLeftMiddle">Gauche</button>
+            </div>
+            <div id = "arrowLeftDown">
+                <button id="buttonLeftDown">Gauche</button>
+            </div>
+        </div>
+
+        <div id="board">
+            <div class= "cell" ></div>
+            <div class= "cell" ></div>
+            <div class= "cell" ></div>
+            <div class= "cell" ></div>
+            <div class= "cell" ></div>
+            <div class= "cell" ></div>
+            <div class= "cell" ></div>
+            <div class= "cell" ></div>
+            <div class= "cell" ></div>
+        </div>
+
+        <div>
+            <div id = "arrowRightUp">
+                <button id="buttonRightUp">Droite</button>
+            </div>
+            <div id = "arrowRightMiddle">
+                <button id="buttonRightMiddle">Droite</button>
+            </div>
+            <div id = "arrowRightDown">
+                <button id="buttonRightDown">Droite</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="buttonDown">
+        <div id = "arrowDownLeft">
+            <button id="buttonDownLeft">Bas</button>
+        </div>
+        <div id = "arrowDownMiddle">
+            <button id="buttonDownMiddle">Bas</button>
+        </div>
+        <div id = "arrowDownRight">
+            <button id="buttonDownRight">Bas</button>
+        </div>
+    </div>
+
+    <p id="titleBoardSecondary">Autre faces</p>
+
+    <div id="game1">
+
+        <div id="board">
+            <div class= "cell1" ></div>
+            <div class= "cell1" ></div>
+            <div class= "cell1" ></div>
+            <div class= "cell1" ></div>
+            <div class= "cell1" ></div>
+            <div class= "cell1" ></div>
+            <div class= "cell1" ></div>
+            <div class= "cell1" ></div>
+            <div class= "cell1" ></div>
+        </div>
+    </div>
+
+    <div id="game2">
+
+        <div id="board">
+            <div class= "cell2" ></div>
+            <div class= "cell2" ></div>
+            <div class= "cell2" ></div>
+            <div class= "cell2" ></div>
+            <div class= "cell2" ></div>
+            <div class= "cell2" ></div>
+            <div class= "cell2" ></div>
+            <div class= "cell2" ></div>
+            <div class= "cell2" ></div>
+        </div>
+
+        <div id="board">
+            <div class= "cell3" ></div>
+            <div class= "cell3" ></div>
+            <div class= "cell3" ></div>
+            <div class= "cell3" ></div>
+            <div class= "cell3" ></div>
+            <div class= "cell3" ></div>
+            <div class= "cell3" ></div>
+            <div class= "cell3" ></div>
+            <div class= "cell3" ></div>
+        </div>
+
+        <div id="board">
+            <div class= "cell4" ></div>
+            <div class= "cell4" ></div>
+            <div class= "cell4" ></div>
+            <div class= "cell4" ></div>
+            <div class= "cell4" ></div>
+            <div class= "cell4" ></div>
+            <div class= "cell4" ></div>
+            <div class= "cell4" ></div>
+            <div class= "cell4" ></div>
+        </div>
+    </div>
+
+    <div id="game3">
+        <div id="board">
+            <div class= "cell5" ></div>
+            <div class= "cell5" ></div>
+            <div class= "cell5" ></div>
+            <div class= "cell5" ></div>
+            <div class= "cell5" ></div>
+            <div class= "cell5" ></div>
+            <div class= "cell5" ></div>
+            <div class= "cell5" ></div>
+            <div class= "cell5" ></div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
